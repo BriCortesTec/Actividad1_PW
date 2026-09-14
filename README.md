@@ -10,11 +10,6 @@ Cada ejercicio explora un tema distinto trabajado durante los ejercicios en clas
 
 El archivo `index.html` en la raíz funciona como menú de navegación, con enlaces a cada uno de los ejercicios. Las carpetas `css`, `js` e `img` contienen los recursos utilizados por los ejercicios.
 
-## Publicación
-
-La página está publicada mediante GitHub Pages en:
-https://bricortestec.github.io/Actividad1_PW/
-
 ## Autor
 
 Bri Cortés - Instituto Tecnológico de Oaxaca 
