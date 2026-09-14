@@ -1,0 +1,137 @@
+/*
+    1. VARIABLES CSS (Custom Properties)
+    - Propósito: Centralizar colores, fuentes y tamaños para fácil mantenimiento.
+    - Beneficios: Cambios globales desde un solo lugar.
+*/
+:root{
+    --color-primario: #927dc1;
+    --color-secundario: #4CC9F0;
+    --color-fondo: #f8f9fa;
+    --color-texto: #2b2d42;
+    --color-borde: #e9ecef;
+}
+
+/*
+    2.RESET BÁSICO
+    - Propósito: Eliminar márgenes y padding predeterminados del navegador.
+    - Importancia: Evita inconsistencias entre navegadores.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* Incluye padding y border en el ancho/alto*/
+}
+
+/*
+    3.ESTILOS GENERALES
+    - TIpografía: ´Inter´ es una fuente moderna y legible.
+    - Fondo: Color claro para contraste con el formulario.
+*/
+body{
+    font-family:'inter', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;/* Mejora legibilidad en textos largos*/
+    padding: 40px 20px;/* Espacio externo*/
+}
+
+/*
+    4. CONTENEDOR PRINCIPAL
+    - max-width: Limita el ancho en pantallas grandes.
+    - margin: 0 auto; Centra el contenedor horizontalmente.
+    - box-shadow: Efesto de elevación sutil.
+*/
+.contenedor-formulario{
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;/*bordes redondeados*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* sombra exterior*/
+}
+
+/*
+    5. ESTILOS DE TIPOGRAFIA
+    - Jerarquía visual: h1 > subtítulo > labels > inputs
+    - font-weight: Negritas para títulos y labels. 
+*/
+h1{
+    font-size: 28px;
+    color: var(--color-primario);
+    margin-bottom: 8px;
+}
+
+.subtitulo{
+    color: #6c757d; /* Gris para texto secundario*/
+    margin-bottom: 30px;
+}
+
+/*
+    6. GRUPOS DE FORMULARIO
+    - margin-bottom: Espacio vertical entre grupos.
+    - display: block en labels para ocupar toda la linea.
+*/
+.grupo-formulario{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;/* seminegrita*/
+    font-size: 14px;
+}
+
+/*
+    7.  INPUTS Y TEXTAREA
+    - transition: Efecto suave al hacer el focus.
+    - :focus-state: Feedback visual al interectuar.
+*/
+input,textarea{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    transition: all 0.3s;/* animición suave*/
+}
+
+input:focus, textarea:focus {
+    border-color: var(--color-secundario);
+    outline: none;/* elimina ek outline predetermionado*/
+    box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.2);/*sombra inferior (efecto glow)*/
+}
+
+/*
+    8. DISPOSICIÓN EN COLUMNAS (GRUPO DOBLE)
+    - grid-template-columns: Divide en 2 columnas iguales
+    - gap: espacio entre columnas
+*/
+.grupo-doble{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/*
+    9. BOTÓN DE ENVÍO
+    - cursor: pointer; cambia el cursor al pasar sobre el botón
+    - flexbox: Cenrtra texto + ícono.
+    - hover-state: efecto al interactuar
+*/
+.boton-enviar{
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-enviar:hover{
+    background-color: #2a0880;/* color oscuro al pasar el mouse*/
+}
