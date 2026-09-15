@@ -1,0 +1,63 @@
+:root{
+    --color-primario: rgb(153, 199, 153);
+    --color-secundario:rgb(94, 135, 94);
+    --color-texto:rgb(48, 36, 33);
+    --color-fondo: rgb(228, 233, 214);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    font-family:'consolas', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;/* Mejora legibilidad en textos largos*/
+    padding: 4% 20px;/* Espacio externo*/
+}
+
+h1{
+    text-align: center;
+}
+.contenedor-calculadora{
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px;
+    border-radius: 38px;
+    box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.1);
+}
+
+.grados{
+    margin-bottom: 10px;
+}
+
+input,textarea{
+    margin-top: 5px;
+    width: 80%;
+    padding: 8px 20px;/*alto ancho*/
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: all 0.3s;/* animición suave*/
+    
+}
+
+
+.boton-convertir{
+    margin-top: 10px;
+    background: var(--color-secundario);
+    border-radius: 12px;
+    padding: 8px 12px;
+    color: aliceblue;
+    border-style: double;
+    transition: background 0.2s;
+}
+
+.boton-convertir:hover{
+    background-color: aliceblue;
+    color: var(--color-secundario);
+}
