@@ -1,0 +1,40 @@
+:root{
+    --color-primario: rgb(153, 199, 153);
+    --color-secundario:rgb(94, 135, 94);
+    --color-texto:rgb(48, 36, 33);
+    --color-fondo: rgb(228, 233, 214);
+}
+
+body{
+    text-align: center;
+    font-family:'consolas', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;/* Mejora legibilidad en textos largos*/
+    padding: 4% 20px;/* Espacio externo*/
+}
+
+h1{
+    text-align: center;
+}
+
+.estiloI{
+    padding: 10px 20px;
+}
+
+
+.boton-convertir{
+    text-align: center;
+    margin-top: 10px;
+    background: var(--color-secundario);
+    border-radius: 12px;
+    padding: 8px 12px;
+    color: aliceblue;
+    border-style: solid;
+    transition: background 0.2s;
+}
+
+.boton-convertir:hover{
+    background-color: aliceblue;
+    color: var(--color-secundario);
+}
