@@ -8,7 +8,7 @@
 
 *{
     margin: 0;
-    padding: 0;
+    
     box-sizing: border-box;
 }
 
@@ -26,7 +26,7 @@ a{
 
 .contenedor-index{
     max-width: 900px;
-    margin: 0 auto;
+    margin: auto;
     background: white;
     padding: 90px;
     border-radius: 14px;
@@ -47,10 +47,10 @@ h1{
     
 }
 
-.grupo-triple{
+.grupo-doble{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px 20px;/*gap: espacio entre FILAS espacio entre COLUMNAS;*/
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;/*espacio entre FILAS entre COLUMNAS*/
 }
 .boton{
     background: #6d9c5f;
