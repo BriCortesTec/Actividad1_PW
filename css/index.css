@@ -52,6 +52,7 @@ h1{
     grid-template-columns: 1fr 1fr;
     gap: 10px 20px;/*espacio entre FILAS entre COLUMNAS*/
 }
+
 .boton{
     background: #6d9c5f;
     border-radius: 12px;
