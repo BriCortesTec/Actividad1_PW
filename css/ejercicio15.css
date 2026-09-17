@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+.contenedor {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 25px 35px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  width: 350px;
+}
+
+.formulario, .resultados, .lista {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[readonly] {
+  background-color: #eaeaea;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #1a252f;
+}
+
+.lista ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.lista li {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 13px;
+  font-weight: bold;
+  min-height: 18px;
+}
