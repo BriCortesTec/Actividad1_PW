@@ -22,6 +22,9 @@ h1 {
     margin-bottom: 20px;
 }
 
+h2{
+    text-align: center;
+}
 /*Estilos para la tabla*/
 .horario {
     width: 100%;
